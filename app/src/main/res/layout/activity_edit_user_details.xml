@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/updateDetialsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="First Name : "
+            android:drawableStart="@drawable/ic_account_circle_black_24dp"
+            android:drawablePadding="5dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.DropDownItem" />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name : "
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:drawableStart="@drawable/ic_account_circle_black_24dp"
+            android:drawablePadding="5dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.DropDownItem"/>
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_cake_black_24dp"
+            android:drawablePadding="5dp"
+            android:text="Day of Birth : "
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.DropDownItem"/>
+
+        <EditText
+            android:id="@+id/birthday"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/Save"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="Update"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

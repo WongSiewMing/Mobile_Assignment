@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEventStep2">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:background="#FAFAFA"
+        android:text="Step 1"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@id/textView2"
+        android:background="@drawable/event_selected_box"
+        android:text="Step 2"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginEnd="8dp"
+        android:background="#FAFAFA"
+        android:layout_toRightOf="@id/textView3"
+        android:text="Step 3"
+        android:gravity="center"
+        android:textSize="25sp"
+        />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView4"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/eventDetailsSection"
+        >
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:padding="5dp"
+        android:text="Tell us more about your event."
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Title"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/eventTitleTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="Description (Optional)"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/descriptionTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18dp"
+        />
+     <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="15dp"
+            android:text="What kind of people you are targetting for ?"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+        />
+
+        <RadioGroup
+            android:id="@+id/peoplRadioBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/allRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:checked="true"
+                android:text="All"
+                android:textSize="18sp"
+                />
+
+            <RadioButton
+                android:id="@+id/childRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Children"
+                android:textSize="18sp"
+                />
+
+            <RadioButton
+                android:id="@+id/adultRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="Adult"
+                android:textSize="18sp"
+                />
+
+            <RadioButton
+                android:id="@+id/oldfolkRadioBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Old folk"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/adultRadioBtn"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        </RadioGroup>
+
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="Amount of Participant"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+
+            <EditText
+                android:id="@+id/participantAmtTxt"
+                android:layout_width="160dp"
+                android:layout_marginRight="1dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:inputType="number"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/proceedButton2"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:onClick="proceedToStep3"
+        android:text="Proceed"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".RequestAssistActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/request1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/assistance_request_1"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <RadioGroup
+            android:id="@+id/request1_group"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/request1"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="38dp">
+
+            <RadioButton
+                android:id="@+id/request1_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:checked="true"
+                android:text="@string/assistance_request_1_1" />
+
+            <RadioButton
+                android:id="@+id/request1_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/assistance_request_1_2" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/request2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/request1_group"
+            android:text="@string/assistance_request_2"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="90dp" />
+
+        <RadioGroup
+            android:id="@+id/request2_group"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/request2"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="112dp">
+
+            <RadioButton
+                android:id="@+id/request2_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:textSize="18sp"
+                android:text="@string/assistance_request_2_1" />
+
+            <RadioButton
+                android:id="@+id/request2_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/assistance_request_2_2" />
+
+            <RadioButton
+                android:id="@+id/request2_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:text="@string/assistance_request_2_3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/request3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request2_group"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/assistance_request_3"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="169dp" />
+
+        <EditText
+            android:id="@+id/request3_desc"
+            android:layout_width="350dp"
+            android:layout_height="176dp"
+            android:layout_below="@+id/request3"
+            android:layout_marginBottom="8dp"
+            android:padding="5dp"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:background="@drawable/edit_text_box"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="191dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_send_white_24dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="328dp"
+            tools:layout_editor_absoluteY="365dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userProfileLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="My Profile"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textStyle="bold"
+            android:theme="@style/ThemeOverlay.TitleText" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/default_profile"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="1dp" />
+
+        <TextView
+            android:id="@+id/HelloUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            android:text="User Display Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/personal_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/change_profilePic"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_photo_camera_blue_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="Change Profile Picture"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/edit-PersonalDetails"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_account_circle_black_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="Edit Personal Details"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_home_black_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="Edit Address"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/change_password"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_create_blue_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="Change Password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewFamilyList"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_group_blue_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="Current Family and Friends"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addFamilyList"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_group_add_black_24dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="Add Family Members and Friends"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/logout_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="Log Out"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

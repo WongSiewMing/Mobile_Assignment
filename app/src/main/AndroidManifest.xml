@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ywh.locality">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBa0OvlDeXL8S2XBGbimQ-YevIbBgYrsz4" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VerifyEmail"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditUserDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditAddress"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddFamilyFriendsListActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ViewAddressActivity" />
+        <activity android:name=".ReviewAddress" />
+        <activity android:name=".ViewFamilyFriendsActivity"/>
+        <activity android:name=".GroupChatActivity" />
+        <activity android:name=".GroupDetails" />
+        <activity android:name=".CreateGroupActivity" />
+        <activity android:name=".SetChatTitle" />
+        <activity android:name=".AddNewGroupMember"/>
+        <activity android:name=".RequestAssistActivity"/>
+        <activity android:name=".AssistanceDetailsActivity"/>
+        <activity android:name=".CreateEventStep1" />
+        <activity android:name=".CreateEventStep2" />
+        <activity android:name=".CreateEventStep3" />
+        <activity android:name=".MapActivity" />
+        <activity android:name=".showEventDetails" />
+        <activity android:name=".viewParticipantList" />
+    </application>
+
+</manifest>

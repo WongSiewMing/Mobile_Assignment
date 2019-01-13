@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/assistance_all"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/assistance_nogroup" />
+
+    <item
+        android:id="@+id/navigation_ff"
+        android:icon="@drawable/ic_family_black_24dp"
+        android:title="@string/assistance_group1" />
+
+
+</menu>
